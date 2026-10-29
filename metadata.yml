@@ -1,33 +1,37 @@
-Identifier: eos0aaa
-Slug: template-model
+Identifier: eos8bpb
+Slug: ecoli-permeation-efflux
 Status: In progress
-Title: This is a template model
-Description: |
-  This is a description of the template model.
-  You can use multiple lines in this description.
+Title: MechGate E. coli Permeation
+Description: 'Scores a molecule against five Escherichia coli barriers with separate
+  models: OmpF porin permeation, multi-porin permeation, lipid-route permeation, efflux
+  susceptibility and whole-cell activity (MIC of 8 ug/mL or lower), built from 3D
+  conformer and charge descriptors at pH 7.4. Each score comes with its percentile
+  against 73, 154 CO-ADD compounds, and no total score is formed. Evaluated retrospectively
+  on marketed drugs only; results depend on the SMILES string written.'
 Deployment:
   - Local
   - Online
 Source: Local, Online
 Source Type: Internal, Replicated, External
 Task: Annotation, Representation, Sampling
-Subtask: Property calculation or prediction, Activity prediction, Featurization, Projection, Similarity search, Generation
-Input: 
+Subtask: Property calculation or prediction, Activity prediction, Featurization,
+  Projection, Similarity search, Generation
+Input:
   - Compound
 Input Dimension: 1
-Output: 
+Output:
   - Value
   - Score
   - Compound
   - Text
 Output Dimension: 1
 Output Consistency: Fixed, Variable
-Interpretation: |
-  The output of this template model should be interpreted like this.
+Interpretation: The output of this template model should be interpreted like 
+  this.
 Tag:
-  - Tag 1
-  - Tag 2
-  - Tag 3
+  - Antimicrobial activity
+  - Gram-negative bacteria
+  - Permeability
 Biomedical Area:
   - Biomedical Area 1
   - Biomedical Area 2
@@ -36,6 +40,7 @@ Target Organism:
   - Target Organism 2
 Publication Type: Peer reviewed, Preprint, Other
 Publication Year: 2026
-Publication: https://example.com
-Source Code: https://example.com
-License: GPL-3.0-or-later, MIT, Apache-2.0...
+Publication: https://arxiv.org/abs/2610.33809
+Source Code: https://github.com/qinlang0008-blip/mechgate
+License: GPL-2.0-only
+Contributor: TiagoJanela
